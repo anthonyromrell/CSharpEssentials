@@ -9,3 +9,14 @@ public class CorrectTheErrors
         Console.WriteLine("HW);
       
 }
+
+                          Corrected Version
+using System;
+
+public class CorrectTheErrors
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine ("HW");
+	}
+}
