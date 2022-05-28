@@ -1,9 +1,18 @@
+using System;
+
 public class ClassExample
 {
-    public int numberCountForHealth;
+    public int numberCountForHealth = 4;
+	public int characterAge;
+	public string playerName = "Jasepi";
+ 
 
-    public void RunExample()
+    public void Main(string[] args)
     {
-        Console.Writeline("Hello World");
-    }
+		characterAge = 2;
+        Console.WriteLine("Welcome " + playerName);
+		Console.WriteLine("You have " + numberCountForHealth + " health.");
+		Console.WriteLine("Happy Birthday! " + characterAge + " never looked so good!");
+	
+	}
 }
