@@ -27,7 +27,7 @@ public class Program
 		heroThree.heroName = "Chip";
 		heroThree.health = 4;
 		heroThree.powerLevel = 4;
-		heroTwo.stamina = 2;
+		heroThree.stamina = 2;
 		
 		Console.WriteLine(heroOne.heroName);
 		Console.WriteLine("Health: " + heroOne.health);
