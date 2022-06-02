@@ -135,5 +135,23 @@ public class Program
 
 }
 
+using System;
+					
+public class Program
+{
+	public void Main()
+	{ 
+		int carl = 4;
+			
+	 
+	 if(carl == 4){
+		 Console.WriteLine("You got 4!" );
+	 }else {
+		 Console.WriteLine("Sorry, no four." );
+	 }
+		
+	}
+}
+
 
 }
