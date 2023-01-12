@@ -8,5 +8,6 @@ public class HelloWorld
     {
         //Change "HW" to "Hello World"
         Console.WriteLine("HW");
-    }    console.writeline("Hello")
+        Console.WriteLine("Hello")
+    }    
 }
