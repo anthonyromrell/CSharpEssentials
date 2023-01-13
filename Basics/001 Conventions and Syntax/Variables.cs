@@ -11,7 +11,7 @@ public class Program
 		tBag = new ChargeUp();
 			
 		beamSword.basicDmg++;
-		beamSword.basicDmg += tBag.dmgLevel;
+		beamSword.basicDmg *= tBag.dmgMultiplier;
 		
 		Console.WriteLine(beamSword.meleeWeaponName + ". Halo's most iconic weapon, now in C#! ");
 		Console.WriteLine("Durability of " + beamSword.durability);
@@ -31,6 +31,6 @@ public class MeleeWeapon {
 }
 
 public class ChargeUp{
-		public float dmgLevel = 8.5f;
+		public float dmgMultiplier = 3.5f;
 	
 }
