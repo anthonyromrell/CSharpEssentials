@@ -5,29 +5,29 @@ using System;
 					
 public class Program
 {
-    public Hero heroOne;
-    public Hero heroTwo;
+	public Hero Kitsune;
+	public Hero JackBat;
 	
-    public void Main()
-    {
-        heroOne = new Hero();
-        heroTwo = new Hero();
+	public void Main()
+	{
+		Kitsune = new Hero();
+		JackBat = new Hero();
 		
-        heroOne.health = 2;
-        heroOne.powerLevel = 5;
+		Kitsune.spirit = 3 + 10;
+		JackBat.transformation = 4*3;
 		
-        heroTwo.health = 3;
-        heroTwo.powerLevel = 1;
+		JackBat.spirit = 10 % 5;
+		Kitsune.transformation = 10/5;
 		
-        Console.WriteLine(heroOne.health);
-        Console.WriteLine(heroOne.powerLevel);
+		Console.WriteLine(Kitsune.spirit);
+		Console.WriteLine(Kitsune.transformation);
 		
-        Console.WriteLine(heroTwo.health);
-        Console.WriteLine(heroTwo.powerLevel);
-    }
+		Console.WriteLine(JackBat.spirit);
+		Console.WriteLine(JackBat.transformation);
+	}
 }
 
 public class Hero {
-    public int health;
-    public int powerLevel;
-}//Based on the HelloWorld File, turn this into a class.
+	public int spirit;
+	public int transformation;
+}
