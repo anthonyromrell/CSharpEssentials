@@ -2,14 +2,14 @@ using System;
 
 namespace MyApplication
 {
-  class Program
+  public class Program
   {
-    static void Main(string[] args)
+    public static void Main(string[]args)
     {
-      string name = "Anthony";
-      Console.WriteLine(name); 
-      int number = 11;
-      Console.WriteLine(number);
+      string name = "Peter";
+      Console.WriteLine("A man named " + name + " had a secret."); 
+      int number = 8;
+      Console.WriteLine("He had " + number + " arms and " + number + " legs.");
      }
   }
 }
