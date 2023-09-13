@@ -1,10 +1,7 @@
 //Use this file to store your work to demonstrate your understanding of operators
 //Make sure your work is different from the instructors examples or your peers
 
-public class ClassExample
-{
-    
-}
+using System;
 
 public class ClassWithVariables
 {
@@ -18,4 +15,4 @@ public class ClassWithFunctions
     {
         Console.WriteLine("Working on it");
     }
-}   
+} 
