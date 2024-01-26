@@ -1,32 +1,30 @@
-//Use this file to store your work to demonstrate your understanding of operators
-//Make sure your work is different from the instructors examples or your peers
 using System;
 					
 public class Program
 {
-	public Hero heroOne;
-	public Hero heroTwo;
+	public Hero Kitsune;
+	public Hero JackBat;
 	
 	public void Main()
 	{
-		heroOne = new Hero();
-		heroTwo = new Hero();
+		Kitsune = new Hero();
+		JackBat = new Hero();
 		
-		heroOne.health = 2;
-		heroOne.powerLevel = 5;
+		Kitsune.spirit = 3;
+		JackBat.transformation = 1;
 		
-		heroTwo.health = 3;
-		heroTwo.powerLevel = 1;
+		JackBat.spirit = 5;
+		Kitsune.transformation = 10;
 		
-		Console.WriteLine(heroOne.health);
-		Console.WriteLine(heroOne.powerLevel);
+		Console.WriteLine(Kitsune.spirit);
+		Console.WriteLine(Kitsune.transformation);
 		
-		Console.WriteLine(heroTwo.health);
-		Console.WriteLine(heroTwo.powerLevel);
+		Console.WriteLine(JackBat.spirit);
+		Console.WriteLine(JackBat.transformation);
 	}
 }
 
 public class Hero {
-	public int health;
-	public int powerLevel;
+	public int spirit;
+	public int transformation;
 }

@@ -2,27 +2,27 @@ using System;
 					
 public class Program
 {
-	public Weapon miniGun;
+	public Weapon Laserbeam;
 	public PowerUp weaponPowerUp;
 	
 	public void Main()
 	{
-		miniGun = new Weapon();
+		Laserbeam = new Weapon();
 		weaponPowerUp = new PowerUp();
 		
-		miniGun.ammoCount++;
-		miniGun.firePower += weaponPowerUp.powerLevel;
-		Console.WriteLine(miniGun.weaponName + " has an ammo count of " + miniGun.ammoCount + ".");
-		Console.WriteLine("The fire power of is now " + miniGun.firePower + ", it has increased.");
+		Laserbeam.blowCount ++;
+		Laserbeam.freezeRay += weaponPowerUp.fluid;
+		Console.WriteLine(Laserbeam.weaponName + " has an ammo count of " + Laserbeam.blowCount + ".");
+		Console.WriteLine("The fluid in the freeze ray has gone below " + Laserbeam.freezeRay + ", it below freezing.");
 	}
 }
 
 public class Weapon { 
-	public int ammoCount = 10;
-	public string weaponName = "Mini Gun";
-	public float firePower = 11.5f;
+	public int blowCount = 100;
+	public string weaponName = "Laser Beam";
+	public float freezeRay = -5f;
 }
 
 public class PowerUp {
-	public float powerLevel = 2.5f;	
+	public float fluid = -60.4f;	
 }
