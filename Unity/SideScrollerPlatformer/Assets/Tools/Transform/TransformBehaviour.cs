@@ -8,6 +8,11 @@ public class TransformBehaviour : MonoBehaviour
     {
         sendTransformAction.Raise(transform);
     }
+    
+    public void SetPosition(Vector3Data obj)
+    {
+        obj.value = transform.position;
+    }
 
     public void GetPosition(Vector3Data obj)
     {

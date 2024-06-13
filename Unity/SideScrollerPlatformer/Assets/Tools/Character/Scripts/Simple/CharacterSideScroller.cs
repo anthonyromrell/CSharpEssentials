@@ -45,7 +45,15 @@ public class CharacterSideScroller : MonoBehaviour
                 jumpsRemaining--;
             }
         }
-
+        // Crunch
+        if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            Crouch(0.5f);
+        }
+        if (Input.GetKeyUp(KeyCode.DownArrow))
+        {
+            Crouch(1f);
+        }
         // Apply movement and handle collisions
         var move = moveDirection + velocity;
         controller.Move(move * Time.deltaTime);
@@ -55,5 +63,13 @@ public class CharacterSideScroller : MonoBehaviour
         var newPosition = transform1.position;
         newPosition.z = 0;
         transform1.position = newPosition;
+    }
+
+    private void Crouch(float crouchHeight)
+    {
+        var t = transform;
+        var scale = t.localScale;
+        scale.y = crouchHeight;
+        t.localScale = scale;
     }
 }
