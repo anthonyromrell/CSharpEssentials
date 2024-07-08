@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
-public class PushRigidbody : MonoBehaviour
+public class PushRigidBody : MonoBehaviour
 {
     public float pushPower = 2.0f;
     CharacterController controller;

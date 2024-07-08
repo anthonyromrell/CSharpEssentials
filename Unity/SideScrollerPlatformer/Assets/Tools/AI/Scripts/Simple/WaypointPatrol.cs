@@ -64,6 +64,5 @@ public class WaypointPatrol : MonoBehaviour
         //animator.SetFloat(MoveX, direction.x);
         //animator.SetFloat(MoveY, direction.y);
         //animator.SetBool(Moving, true);
-        lives.
     }
 }
