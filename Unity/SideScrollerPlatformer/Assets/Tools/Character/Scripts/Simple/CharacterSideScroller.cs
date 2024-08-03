@@ -7,7 +7,7 @@ public class CharacterSideScroller : MonoBehaviour
     public float jumpForce = 4f;
     public float gravity = -9.81f;
     public int maxJumps = 2;
-
+    
     private CharacterController controller;
     private Vector3 velocity;
     private int jumpsRemaining;
@@ -55,8 +55,8 @@ public class CharacterSideScroller : MonoBehaviour
             Crouch(1f);
         }
         // Apply movement and handle collisions
-        var move = moveDirection + velocity;
-        controller.Move(move * Time.deltaTime);
+        var move = moveDirection + velocity * Time.deltaTime;
+        controller.Move(move);
 
         // Set the character's Z position to 0
         var transform1 = transform;
