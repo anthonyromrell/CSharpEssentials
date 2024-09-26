@@ -1,9 +1,42 @@
-//Use this file to store your work to demonstrate your understanding of operators
-//Make sure your work is different from the instructors examples or your peers
+using System;
 
-//Based on the HelloWorld File, turn this into a class.
+public class Program 
+{
+	public Item grenade;
+	public Weapon pistole;
+	public Item potion;
+	public Weapon rifle;
+	
+	public void Main()
+	{
+		grenade = new Item();
+		pistole = new Weapon();
+		rifle= new Weapon();
+		
+		grenade.uses+=
+		grenade.damage++;
+		Console.WriteLine(grenade.uses);
+		
+		pistole.magazineSize++ ;
+		pistole.damagePerBullet++ ;
+		pistole.headshotDamage+= pistole.damagePerBullet; 
+		Console.WriteLine(pistole.magazineSize);
+		Console.WriteLine(pistole.damagePerBullet);
+		Console.WriteLine(pistole.headshotDamage);
+		
+	}	
+}
 
-//Write a console program with a program class, and Main Function
-//Add another class with any name, add variables 
-//Using the new keyword create several objects
-//Console writeline the Objects variables
+public class Item {
+	public int uses = 2;
+	public string itemName = "Frag";
+	public int damage = 50;
+}
+
+public class Weapon {
+	public int magazineSize = 10;
+	public int damagePerBullet = 20;
+	public float headshotDamage = 7.5f;
+	public string weaponName = "Pistole" + "Rifle";
+	
+}
