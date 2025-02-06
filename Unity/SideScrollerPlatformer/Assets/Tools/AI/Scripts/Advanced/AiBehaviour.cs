@@ -9,7 +9,7 @@ using UnityEngine.Events;
 public class AiBehaviour : MonoBehaviour
 {
     [SerializeField] private AiBrain aiBrainObj;
-    [SerializeField] private UnityEvent startEvent, triggerEnterEvent, triggerExitEvent;
+    [SerializeField] private UnityEvent startEvent, enableEvent, triggerEnterEvent, triggerExitEvent, disableEvent;
 
     private NavMeshAgent agent;
 
@@ -23,21 +23,32 @@ public class AiBehaviour : MonoBehaviour
     private void Start()
     {
         startEvent.Invoke();
+    }
+    
+    private void OnEnable()
+    {
+        enableEvent.Invoke();
+        CanRun = true;
         StartCoroutine(NavBrainCoroutine());
+    }
+
+    private void OnDisable()
+    {
+        disableEvent.Invoke();
+        CanRun = false;
     }
 
     public void Stop(bool stopped)
     {
         agent.isStopped = stopped;
     }
-
-
+    
     public void SwapAIFunction(AiBase aiBaseObj)
     {
         aiBrainObj.aiBaseObj = aiBaseObj;
     }
 
-    IEnumerator NavBrainCoroutine()
+    private IEnumerator NavBrainCoroutine()
     {
         while (CanRun)
         {

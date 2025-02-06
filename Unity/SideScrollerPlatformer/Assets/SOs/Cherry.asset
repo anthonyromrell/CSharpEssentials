@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fd521484c19040fc8a8e712c717436f, type: 3}
   m_Name: Cherry
   m_EditorClassIdentifier: 
-  art: {fileID: 0}
-  price: 10
+  art: {fileID: -4570538037665054336, guid: 3d6be91968cb95546ac95aeff5e52f84, type: 3}
+  price: 1
   collected: 0

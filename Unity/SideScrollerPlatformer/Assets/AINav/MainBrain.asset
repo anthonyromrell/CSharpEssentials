@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c56382e780504055a70fe2e15197725, type: 3}
-  m_Name: Cherry Count
+  m_Script: {fileID: 11500000, guid: 6a26a29b936a847898beb95f0c961547, type: 3}
+  m_Name: MainBrain
   m_EditorClassIdentifier: 
-  value: 1
+  aiBaseObj: {fileID: 11400000, guid: ccdceb4be39e04adf93141b4420f46d8, type: 2}

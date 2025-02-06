@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12dd37cec368444a8e5486c62806ab9, type: 3}
   m_Name: Fruit
   m_EditorClassIdentifier: 
-  cash: {fileID: 0}
+  cash: {fileID: 11400000, guid: 5fcd151c4330b47948d82fa4c3a96678, type: 2}
   layoutObject: {fileID: 0}
-  collectablesList: []
+  collectablesList:
+  - {fileID: 11400000, guid: 4a824bb78d39a4213abaaabd4ca11096, type: 2}
