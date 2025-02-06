@@ -1,6 +1,5 @@
 using UnityEngine;
 
-
 [CreateAssetMenu]
 public class Collectable : ScriptableObject
 {

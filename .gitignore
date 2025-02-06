@@ -66,3 +66,7 @@ Basics/001 Conventions and Syntax/.idea/.idea.001 Conventions and Syntax.dir/.id
 Unity/ColorMatch Game/.idea/.idea.ColorMatch Game/.idea/
 
 *.dwlt
+
+Unity/SideScrollerPlatformer/Assets/Plugins/
+
+Unity/ColorMatch Game/Packages/

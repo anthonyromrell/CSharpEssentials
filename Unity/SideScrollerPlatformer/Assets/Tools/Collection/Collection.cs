@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System.ComponentModel;
 using UnityEngine;
 [CreateAssetMenu]
 public class Collection : ScriptableObject
@@ -11,5 +10,10 @@ public class Collection : ScriptableObject
     public void ReorderList()
     {
         collectablesList.Sort();
+    }
+
+    public void Collect(Collectable obj)
+    {
+        collectablesList.Add(obj);
     }
 }

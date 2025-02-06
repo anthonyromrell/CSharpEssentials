@@ -1,12 +1,11 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.AI;
 
 [CreateAssetMenu(fileName = "Patrol", menuName = "Ai/Function/Patrol")]
 public class AiPatrol : AiBase
 {
     public Vector3DataCollection patrolPoints;
-    protected int i;
+    private int i;
 
     protected virtual void OnEnable()
     {
@@ -21,10 +20,8 @@ public class AiPatrol : AiBase
 
     public override void RunAgent(NavMeshAgent agent)
     {
-        if (!agent.pathPending && agent.remainingDistance < 0.5f)
-        {
-            agent.destination = patrolPoints.vector3Datas[i].value;
-            i = (i + 1) % patrolPoints.vector3Datas.Count;
-        }
+        if (agent.pathPending || !(agent.remainingDistance < 0.5f)) return;
+        agent.destination = patrolPoints.vector3Datas[i].value;
+        i = (i + 1) % patrolPoints.vector3Datas.Count;
     }
 }

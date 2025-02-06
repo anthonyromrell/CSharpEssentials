@@ -4,14 +4,15 @@ using UnityEngine.AI;
 [CreateAssetMenu(fileName = "AiBrain", menuName = "Ai/Brain")]
 public class AiBrain : ScriptableObject
 {
-	public AiBase aiBaseObj;
-	public void ChangeBase(AiBase obj)
-	{
-		aiBaseObj = obj;
-	}
+    [SerializeField] public AiBase aiBaseObj;
 
-	public void Navigate(NavMeshAgent agent)
-	{
-		aiBaseObj.RunAgent(agent);
-	}
+    public void ChangeBase(AiBase newObj)
+    {
+        aiBaseObj = newObj;
+    }
+
+    public void Navigate(NavMeshAgent agent)
+    {
+        aiBaseObj.RunAgent(agent);
+    }
 }
