@@ -6,7 +6,7 @@ public class AgentBehaviour : MonoBehaviour
 {
     private NavMeshAgent agent;
     public Transform player;
-    void Start()
+    private void Start()
     {
         agent = GetComponent<NavMeshAgent>();
     }
